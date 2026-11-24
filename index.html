@@ -10,19 +10,24 @@
     <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
 <body>
-    <nav class="navbar md:navbar-expand justify-content-end bg-muted-primary">
+    <nav class="navbar md:navbar-expand justify-content-end bg-primary">
         <div class="container">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <a href="#" class="brand navbar-brand fs-xl text">Student Dashboard</a>
+            <a href="#" class="tittle brand navbar-brand fs-xl text">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Student Dashboard
+            </a>
         </div>
     </nav>
     <main>
-        <section class="main py-5 bg-white">
+        <section class="py-5 bg-light">
             <div class="container">
-                <div class="head">
-                    <h1 class="h3">Daftar Nilai Siswa</h1>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="box bg-white">
+                    <div class="head">
+                    <h1 class="h3 fg-primary">Daftar Nilai Siswa</h1>
+                    <div class="input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     <input id="searchInput" type="search" class="search" placeholder="Cari nama siswa">
+                    </div>
                 </div>
                 <table>
                     <thead>
@@ -33,10 +38,9 @@
                         <th>Nilai(Score)</th>
                     </tr>
                     </thead>
-                    <tbody id="studentTable">
-
-                    </tbody>
+                    <tbody id="studentTable"></tbody>
                 </table>
+                </div>
             </div>
         </section>
     </main>

@@ -1,0 +1,83 @@
+.tittle {
+    color: white;
+}
+
+.box {
+    margin: 34px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding: 12px;
+}
+
+.input {
+    border: 1px solid rgb(209, 209, 209);
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.search {
+    border: none;
+    border-left: 1px solid rgb(209, 209, 209);
+    padding-left: 7px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+   background-color: rgb(242, 248, 250);
+
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+}
+
+th:nth-child(2) {
+    text-align: left;
+}
+
+td:nth-child(2){
+    text-align: left;
+}
+
+.kelas {
+    background-color: grey;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: small;
+}
+
+.score-badge {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.score-high {
+    background-color: green; color: white;
+}
+
+.score-medium {
+    background-color: gold; color: black;
+}
+
+.score-low {
+    background-color: red; color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}

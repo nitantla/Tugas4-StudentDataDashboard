@@ -54,14 +54,24 @@ const students = [
 const searchInput = document.getElementById("searchInput");
 const studentTable = document.getElementById("studentTable"); 
 
+function getScoreClass(score) {
+    if (score >= 85){
+        return "score-high";
+    } else if (score > 70) {
+        return "score-medium";
+    } else {
+        return "score-low";
+    }
+}
+
 function renderTable(data) {
   const rows = data.map(
     (student, index) =>
-        `<tr class="table">
+        `<tr>
             <td>${index + 1}</td>
             <td>${student.name}</td>
-            <td>${student.class}</td>
-            <td>${student.score}</td>
+            <td><span class="kelas">${student.class}</span></td>
+            <td><span class="score-badge ${getScoreClass(student.score)}">${student.score}</span></td>
         </tr>`,
   );
   studentTable.innerHTML = rows.join("");
