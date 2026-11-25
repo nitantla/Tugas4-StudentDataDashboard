@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentDataDashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
+
 <body>
     <nav class="navbar md:navbar-expand justify-content-end bg-primary">
         <div class="container">
@@ -23,23 +25,27 @@
             <div class="container">
                 <div class="box bg-white">
                     <div class="head">
-                    <h1 class="h3 fg-primary">Daftar Nilai Siswa</h1>
-                    <div class="input">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    <input id="searchInput" type="search" class="search" placeholder="Cari nama siswa">
+                        <h1 class="h3 fg-primary">Daftar Nilai Siswa</h1>
+                        <div class="input">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input id="searchInput" type="search" class="search" placeholder="Cari nama siswa">
+                        </div>
                     </div>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                        <th>No</th>
-                        <th>Nama Siswa</th>
-                        <th>Kelas</th>
-                        <th>Nilai(Score)</th>
-                    </tr>
-                    </thead>
-                    <tbody id="studentTable"></tbody>
-                </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Siswa</th>
+                                <th>Kelas</th>
+                                <th>Nilai(Score)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTable"></tbody>
+                    </table>
+                    <div class="table-footer">
+                        <span>Rata-rata Nilai Kelas:</span>
+                        <span id="averageScore" class="average-badge">0</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -47,4 +53,5 @@
 
     <script src="Assets/JS/script.js"></script>
 </body>
+
 </html>

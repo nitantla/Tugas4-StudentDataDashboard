@@ -75,6 +75,7 @@ function renderTable(data) {
         </tr>`,
   );
   studentTable.innerHTML = rows.join("");
+  renderAverage(data);
 }
 
 function filterTable() {
@@ -85,6 +86,20 @@ function filterTable() {
     );
 
     renderTable(filteredStudent);
+}
+
+const averageScore = document.getElementById("averageScore");
+
+function renderAverage(data) {
+  if (data.length === 0) {
+    averageScore.textContent = "-";
+    return;
+  }
+
+  const total = data.reduce((sum, student) => sum + student.score, 0);
+  const average = total / data.length;
+
+  averageScore.textContent = average.toFixed(1);
 }
 
 searchInput.addEventListener("input", filterTable);
